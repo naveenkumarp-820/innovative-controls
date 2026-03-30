@@ -26,7 +26,7 @@
     <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="anonymous" />
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
     <script
-        type="text/javascript">WebFont.load({ google: { families: ["Phudu:300,regular,500,600,700,800,900", "DM Sans:regular,600,italic"] } });</script>
+        type="text/javascript">WebFont.load({ google: { families: ["Phudu:300,regular,500,600,700,800,900", "DM Sans:regular,600,italic", "Montserrat:600,700"] } });</script>
     <script
         type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
 
@@ -98,7 +98,7 @@
         /* The moving track */
         .infinite-slider-track {
             display: inline-block;
-            animation: slide-left-to-right 40s linear infinite;
+            animation: slide-left-to-right 60s linear infinite;
         }
 
         .infinite-slider-track:hover {
@@ -130,7 +130,8 @@
         /* Custom Client Card matching the Testimonial Design */
         .custom-client-card {
             display: inline-flex;
-            width: 380px;
+            width: 420px;
+            min-height: 280px;
             margin: 0 15px;
             white-space: normal;
             vertical-align: top;
@@ -140,7 +141,7 @@
             border: 1px solid #eaecf0;
             border-radius: 16px;
             background: #fff;
-            padding: 30px;
+            padding: 35px 30px;
         }
 
         .custom-client-card:hover {
@@ -151,9 +152,10 @@
 
         .client-logo-img {
             height: 50px;
+            width: auto;
             object-fit: contain;
-            margin: 20px 0;
-            max-width: 150px;
+            margin: 15px 0 20px 0;
+            border-radius: 6px;
         }
 
         /* Force perfectly even heights on the pricing cards */
@@ -192,8 +194,9 @@
                 data-easing2="ease" role="banner" class="navbar-logo-left-container shadow-three w-nav">
                 <div class="navbar-wrapper">
                     <a href="index.html" class="navbar-brand w-nav-brand">
-                        <img src="https://placehold.co/400x100/ffffff/003366?text=INNOVATIVE+CONTROLS" loading="lazy"
-                            alt="Innovative Controls" height="45" class="site-logo" style="object-fit: contain;" />
+                        <img src="https://placehold.co/400x100/ffffff/003366?text=INNOVATIVE+CONTROLS&font=Montserrat"
+                            loading="lazy" alt="Innovative Controls" height="45" class="site-logo"
+                            style="object-fit: contain;" />
                     </a>
                     <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
                         <ul role="list" class="nav-menu-two w-list-unstyled">
@@ -251,7 +254,7 @@
                     <a href="features.html" class="primary-button w-button">Explore Our Solutions</a>
                     <a href="contact-us.html" class="secondary-button w-button">Consult an Expert</a>
                 </div>
-                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1130&q=80"
+                <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
                     loading="lazy" width="1130" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
                     alt="Innovative Controls Manufacturing Facility" class="hero-d-image"
                     style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
@@ -350,22 +353,22 @@
                             planning, and tailored software design to meet future-ready goals.</p>
                     </div>
                     <div class="info-section-right-saas">
-                        <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=800&q=80"
+                        <img src="https://images.pexels.com/photos/3862632/pexels-photo-3862632.jpeg?auto=compress&cs=tinysrgb&w=800"
                             loading="lazy" alt="Design Architecture" style="border-radius: 12px;" />
                     </div>
                 </div>
 
-                <div class="w-layout-hflex info-section-rev">
+                <!-- <div class="w-layout-hflex info-section-rev">
                     <div class="info-section-left">
                         <h2>Build & Implement</h2>
                         <p class="text-light">Precision control panel manufacturing, field device configuration,
                             networking, and rigorous quality testing in our 6000 Sq.Ft facility.</p>
                     </div>
                     <div class="info-section-right-saas">
-                        <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff0f?auto=format&fit=crop&w=800&q=80"
+                        <img src="https://images.pexels.com/photos/12052042/pexels-photo-12052042.jpeg?auto=compress&cs=tinysrgb&w=800"
                             loading="lazy" alt="Panel Implementation" style="border-radius: 12px;" />
                     </div>
-                </div>
+                </div> -->
 
                 <div class="w-layout-hflex info-section">
                     <div class="info-section-left">
@@ -374,7 +377,7 @@
                             platforms, and 24x7 remote monitoring support.</p>
                     </div>
                     <div class="info-section-right-saas">
-                        <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=800&q=80"
+                        <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800"
                             loading="lazy" alt="Operations" style="border-radius: 12px;" />
                     </div>
                 </div>
@@ -391,22 +394,22 @@
 
             <div class="infinite-slider-container" style="margin-top: 20px;">
                 <div class="infinite-slider-track">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                    <img src="https://images.pexels.com/photos/2085832/pexels-photo-2085832.jpeg?auto=compress&cs=tinysrgb&w=800"
                         alt="BMS Software" class="slider-img" />
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800"
                         alt="Control Panel" class="slider-img" />
-                    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80"
-                        alt="Robotics" class="slider-img" />
-                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
+                    <!-- <img src="https://images.pexels.com/photos/12052042/pexels-photo-12052042.jpeg?auto=compress&cs=tinysrgb&w=800"
+                        alt="Robotics" class="slider-img" /> -->
+                    <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800"
                         alt="Data Analytics" class="slider-img" />
 
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80"
+                    <img src="https://images.pexels.com/photos/2085832/pexels-photo-2085832.jpeg?auto=compress&cs=tinysrgb&w=800"
                         alt="BMS Software" class="slider-img" />
-                    <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80"
+                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800"
                         alt="Control Panel" class="slider-img" />
-                    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=800&q=80"
+                    <img src="https://images.pexels.com/photos/12052042/pexels-photo-12052042.jpeg?auto=compress&cs=tinysrgb&w=800"
                         alt="Robotics" class="slider-img" />
-                    <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=800&q=80"
+                    <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800"
                         alt="Data Analytics" class="slider-img" />
                 </div>
             </div>
@@ -517,224 +520,272 @@
                     <div class="slide-content-wrapper-testimonial custom-client-card">
                         <div class="w-layout-vflex tstimonial-detailes">
                             <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Strategic Partner</div>
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b68a34981acca3e9f8310d_SVG.svg"
-                                    loading="lazy" alt="" />
+                                <div class="rating-label">Enterprise Partner</div>
                             </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Indian_Space_Research_Organisation_Logo.svg"
+                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=ISRO&font=Montserrat"
                                 class="client-logo-img" alt="ISRO" />
-                            <p class="testimonial">Supporting national infrastructure with mission-critical automation
-                                and centralized control room architecture.</p>
+                            <p class="testimonial" style="font-size:15px; color:#444;">The Indian Space Research
+                                Organisation is the national space agency of India. We support their infrastructure with
+                                mission-critical automation and centralized control architectures.</p>
+                            <div class="author-details">
+                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Aerospace
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="slide-content-wrapper-testimonial custom-client-card">
                         <div class="w-layout-vflex tstimonial-detailes">
                             <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Strategic Partner</div>
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b68a34981acca3e9f8310d_SVG.svg"
-                                    loading="lazy" alt="" />
+                                <div class="rating-label">Enterprise Partner</div>
                             </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/BHEL_logo.svg"
+                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=BHEL&font=Montserrat"
                                 class="client-logo-img" alt="BHEL" />
-                            <p class="testimonial">Advanced process optimization and safety-rated control panels for
-                                heavy engineering and power generation.</p>
+                            <p class="testimonial" style="font-size:15px; color:#444;">Bharat Heavy Electricals Limited
+                                is a leading engineering enterprise. We provide advanced process optimization and
+                                safety-rated panels for their heavy engineering facilities.</p>
+                            <div class="author-details">
+                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Heavy
+                                    Equipment</div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="slide-content-wrapper-testimonial custom-client-card">
                         <div class="w-layout-vflex tstimonial-detailes">
                             <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Strategic Partner</div>
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b68a34981acca3e9f8310d_SVG.svg"
-                                    loading="lazy" alt="" />
+                                <div class="rating-label">Enterprise Partner</div>
                             </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Tata_logo.svg"
+                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=TATA&font=Montserrat"
                                 class="client-logo-img" alt="Tata" />
-                            <p class="testimonial">Ensuring high-efficiency production lines through smart integration
-                                and comprehensive lifecycle services.</p>
+                            <p class="testimonial" style="font-size:15px; color:#444;">Tata is a global conglomerate. We
+                                ensure high-efficiency production lines across their manufacturing divisions through
+                                smart integration and lifecycle services.</p>
+                            <div class="author-details">
+                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Conglomerate
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="slide-content-wrapper-testimonial custom-client-card">
                         <div class="w-layout-vflex tstimonial-detailes">
                             <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Strategic Partner</div>
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b68a34981acca3e9f8310d_SVG.svg"
-                                    loading="lazy" alt="" />
+                                <div class="rating-label">Enterprise Partner</div>
                             </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Saint-Gobain_logo.svg"
+                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=Saint-Gobain&font=Montserrat"
                                 class="client-logo-img" alt="Saint-Gobain" />
-                            <p class="testimonial">Delivering robust control panels and driving sustainable energy
-                                management systems for global manufacturing operations.</p>
+                            <p class="testimonial" style="font-size:15px; color:#444;">A multinational corporation
+                                producing high-performance materials. We deliver robust control panels and drive
+                                sustainable energy management for their operations.</p>
+                            <div class="author-details">
+                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Glass &
+                                    Materials</div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="slide-content-wrapper-testimonial custom-client-card">
                         <div class="w-layout-vflex tstimonial-detailes">
                             <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Strategic Partner</div>
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b68a34981acca3e9f8310d_SVG.svg"
-                                    loading="lazy" alt="" />
+                                <div class="rating-label">Enterprise Partner</div>
                             </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Hyundai_Motor_Company_logo.svg"
+                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=Hyundai&font=Montserrat"
                                 class="client-logo-img" alt="Hyundai" />
-                            <p class="testimonial">Deploying precision automation to optimize high-demand assembly lines
-                                and robotics integration.</p>
+                            <p class="testimonial" style="font-size:15px; color:#444;">A global leader in automotive
+                                manufacturing. We deploy precision machine automation to optimize their high-demand
+                                assembly lines and robotics integration.</p>
+                            <div class="author-details">
+                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Automotive
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="slide-content-wrapper-testimonial custom-client-card">
                         <div class="w-layout-vflex tstimonial-detailes">
                             <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Strategic Partner</div>
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b68a34981acca3e9f8310d_SVG.svg"
-                                    loading="lazy" alt="" />
+                                <div class="rating-label">Enterprise Partner</div>
                             </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/PepsiCo_logo.svg"
+                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=PepsiCo&font=Montserrat"
                                 class="client-logo-img" alt="PepsiCo" />
-                            <p class="testimonial">Implementing intelligent machine automation and batch-processing
-                                controls to increase output.</p>
+                            <p class="testimonial" style="font-size:15px; color:#444;">A global food and beverage
+                                leader. We implement intelligent machine automation and batch-processing controls to
+                                maximize their production output and compliance.</p>
+                            <div class="author-details">
+                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Food &
+                                    Beverage</div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="slide-content-wrapper-testimonial custom-client-card">
                         <div class="w-layout-vflex tstimonial-detailes">
                             <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Strategic Partner</div>
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b68a34981acca3e9f8310d_SVG.svg"
-                                    loading="lazy" alt="" />
+                                <div class="rating-label">Enterprise Partner</div>
                             </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Ford_Motor_Company_Logo.svg"
+                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=Ford&font=Montserrat"
                                 class="client-logo-img" alt="Ford" />
-                            <p class="testimonial">Delivering highly robust integration systems for national and global
-                                production workflows.</p>
+                            <p class="testimonial" style="font-size:15px; color:#444;">An iconic global automotive brand
+                                leading modern assembly lines. We deliver highly robust integration systems for their
+                                national production workflows.</p>
+                            <div class="author-details">
+                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Automotive
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="slide-content-wrapper-testimonial custom-client-card">
                         <div class="w-layout-vflex tstimonial-detailes">
                             <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Strategic Partner</div>
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b68a34981acca3e9f8310d_SVG.svg"
-                                    loading="lazy" alt="" />
+                                <div class="rating-label">Enterprise Partner</div>
                             </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Steel_Authority_of_India_logo.svg"
+                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=SAIL&font=Montserrat"
                                 class="client-logo-img" alt="SAIL" />
-                            <p class="testimonial">Critical controls and energy monitoring for high-security and intense
-                                industrial operations.</p>
+                            <p class="testimonial" style="font-size:15px; color:#444;">Steel Authority of India Limited
+                                is a top steel-maker powering infrastructure. We provide critical controls and energy
+                                monitoring for their intense industrial operations.</p>
+                            <div class="author-details">
+                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Metals &
+                                    Mining</div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="slide-content-wrapper-testimonial custom-client-card">
                         <div class="w-layout-vflex tstimonial-detailes">
                             <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Strategic Partner</div>
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b68a34981acca3e9f8310d_SVG.svg"
-                                    loading="lazy" alt="" />
+                                <div class="rating-label">Enterprise Partner</div>
                             </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Indian_Space_Research_Organisation_Logo.svg"
+                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=ISRO&font=Montserrat"
                                 class="client-logo-img" alt="ISRO" />
-                            <p class="testimonial">Supporting national infrastructure with mission-critical automation
-                                and centralized control room architecture.</p>
+                            <p class="testimonial" style="font-size:15px; color:#444;">The Indian Space Research
+                                Organisation is the national space agency of India. We support their infrastructure with
+                                mission-critical automation and centralized control architectures.</p>
+                            <div class="author-details">
+                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Aerospace
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="slide-content-wrapper-testimonial custom-client-card">
                         <div class="w-layout-vflex tstimonial-detailes">
                             <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Strategic Partner</div>
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b68a34981acca3e9f8310d_SVG.svg"
-                                    loading="lazy" alt="" />
+                                <div class="rating-label">Enterprise Partner</div>
                             </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/BHEL_logo.svg"
+                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=BHEL&font=Montserrat"
                                 class="client-logo-img" alt="BHEL" />
-                            <p class="testimonial">Advanced process optimization and safety-rated control panels for
-                                heavy engineering and power generation.</p>
+                            <p class="testimonial" style="font-size:15px; color:#444;">Bharat Heavy Electricals Limited
+                                is a leading engineering enterprise. We provide advanced process optimization and
+                                safety-rated panels for their heavy engineering facilities.</p>
+                            <div class="author-details">
+                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Heavy
+                                    Equipment</div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="slide-content-wrapper-testimonial custom-client-card">
                         <div class="w-layout-vflex tstimonial-detailes">
                             <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Strategic Partner</div>
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b68a34981acca3e9f8310d_SVG.svg"
-                                    loading="lazy" alt="" />
+                                <div class="rating-label">Enterprise Partner</div>
                             </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Tata_logo.svg"
+                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=TATA&font=Montserrat"
                                 class="client-logo-img" alt="Tata" />
-                            <p class="testimonial">Ensuring high-efficiency production lines through smart integration
-                                and comprehensive lifecycle services.</p>
+                            <p class="testimonial" style="font-size:15px; color:#444;">Tata is a global conglomerate. We
+                                ensure high-efficiency production lines across their manufacturing divisions through
+                                smart integration and lifecycle services.</p>
+                            <div class="author-details">
+                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Conglomerate
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="slide-content-wrapper-testimonial custom-client-card">
                         <div class="w-layout-vflex tstimonial-detailes">
                             <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Strategic Partner</div>
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b68a34981acca3e9f8310d_SVG.svg"
-                                    loading="lazy" alt="" />
+                                <div class="rating-label">Enterprise Partner</div>
                             </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Saint-Gobain_logo.svg"
+                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=Saint-Gobain&font=Montserrat"
                                 class="client-logo-img" alt="Saint-Gobain" />
-                            <p class="testimonial">Delivering robust control panels and driving sustainable energy
-                                management systems for global manufacturing operations.</p>
+                            <p class="testimonial" style="font-size:15px; color:#444;">A multinational corporation
+                                producing high-performance materials. We deliver robust control panels and drive
+                                sustainable energy management for their operations.</p>
+                            <div class="author-details">
+                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Glass &
+                                    Materials</div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="slide-content-wrapper-testimonial custom-client-card">
                         <div class="w-layout-vflex tstimonial-detailes">
                             <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Strategic Partner</div>
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b68a34981acca3e9f8310d_SVG.svg"
-                                    loading="lazy" alt="" />
+                                <div class="rating-label">Enterprise Partner</div>
                             </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Hyundai_Motor_Company_logo.svg"
+                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=Hyundai&font=Montserrat"
                                 class="client-logo-img" alt="Hyundai" />
-                            <p class="testimonial">Deploying precision automation to optimize high-demand assembly lines
-                                and robotics integration.</p>
+                            <p class="testimonial" style="font-size:15px; color:#444;">A global leader in automotive
+                                manufacturing. We deploy precision machine automation to optimize their high-demand
+                                assembly lines and robotics integration.</p>
+                            <div class="author-details">
+                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Automotive
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="slide-content-wrapper-testimonial custom-client-card">
                         <div class="w-layout-vflex tstimonial-detailes">
                             <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Strategic Partner</div>
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b68a34981acca3e9f8310d_SVG.svg"
-                                    loading="lazy" alt="" />
+                                <div class="rating-label">Enterprise Partner</div>
                             </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/PepsiCo_logo.svg"
+                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=PepsiCo&font=Montserrat"
                                 class="client-logo-img" alt="PepsiCo" />
-                            <p class="testimonial">Implementing intelligent machine automation and batch-processing
-                                controls to increase output.</p>
+                            <p class="testimonial" style="font-size:15px; color:#444;">A global food and beverage
+                                leader. We implement intelligent machine automation and batch-processing controls to
+                                maximize their production output and compliance.</p>
+                            <div class="author-details">
+                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Food &
+                                    Beverage</div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="slide-content-wrapper-testimonial custom-client-card">
                         <div class="w-layout-vflex tstimonial-detailes">
                             <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Strategic Partner</div>
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b68a34981acca3e9f8310d_SVG.svg"
-                                    loading="lazy" alt="" />
+                                <div class="rating-label">Enterprise Partner</div>
                             </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Ford_Motor_Company_Logo.svg"
+                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=Ford&font=Montserrat"
                                 class="client-logo-img" alt="Ford" />
-                            <p class="testimonial">Delivering highly robust integration systems for national and global
-                                production workflows.</p>
+                            <p class="testimonial" style="font-size:15px; color:#444;">An iconic global automotive brand
+                                leading modern assembly lines. We deliver highly robust integration systems for their
+                                national production workflows.</p>
+                            <div class="author-details">
+                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Automotive
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <div class="slide-content-wrapper-testimonial custom-client-card">
                         <div class="w-layout-vflex tstimonial-detailes">
                             <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Strategic Partner</div>
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b68a34981acca3e9f8310d_SVG.svg"
-                                    loading="lazy" alt="" />
+                                <div class="rating-label">Enterprise Partner</div>
                             </div>
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/e/ea/Steel_Authority_of_India_logo.svg"
+                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=SAIL&font=Montserrat"
                                 class="client-logo-img" alt="SAIL" />
-                            <p class="testimonial">Critical controls and energy monitoring for high-security and intense
-                                industrial operations.</p>
+                            <p class="testimonial" style="font-size:15px; color:#444;">Steel Authority of India Limited
+                                is a top steel-maker powering infrastructure. We provide critical controls and energy
+                                monitoring for their intense industrial operations.</p>
+                            <div class="author-details">
+                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Metals &
+                                    Mining</div>
+                            </div>
                         </div>
                     </div>
 
@@ -805,7 +856,7 @@
             <div class="w-layout-blockcontainer container align-center w-container">
                 <div class="w-layout-hflex cta-wraper">
                     <div class="cta-left">
-                        <img src="https://images.unsplash.com/photo-1581092335397-9583eb92d232?auto=format&fit=crop&w=800&q=80"
+                        <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800"
                             loading="lazy" width="515" alt="Innovative Controls Automation" class="image"
                             style="border-radius: 12px;" />
                     </div>
@@ -847,7 +898,7 @@
                         <div role="listitem" class="blog-cms-item w-dyn-item w-col w-col-4">
                             <a href="#" class="blog-card-wrapper w-inline-block">
                                 <div class="w-layout-vflex blog-card">
-                                    <img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff0f?auto=format&fit=crop&w=400&q=80"
+                                    <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400"
                                         loading="lazy" alt="" class="blog-card-img"
                                         style="object-fit: cover; height: 200px;" />
                                     <h4 class="blog-card-title">Bridging IT and OT for Smart Manufacturing</h4>
@@ -860,7 +911,7 @@
                         <div role="listitem" class="blog-cms-item w-dyn-item w-col w-col-4">
                             <a href="#" class="blog-card-wrapper w-inline-block">
                                 <div class="w-layout-vflex blog-card">
-                                    <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=400&q=80"
+                                    <img src="https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=400"
                                         loading="lazy" alt="" class="blog-card-img"
                                         style="object-fit: cover; height: 200px;" />
                                     <h4 class="blog-card-title">Sustainable Energy Management with SCADA</h4>
@@ -873,7 +924,7 @@
                         <div role="listitem" class="blog-cms-item w-dyn-item w-col w-col-4">
                             <a href="#" class="blog-card-wrapper w-inline-block">
                                 <div class="w-layout-vflex blog-card">
-                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=400&q=80"
+                                    <img src="https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=400"
                                         loading="lazy" alt="" class="blog-card-img"
                                         style="object-fit: cover; height: 200px;" />
                                     <h4 class="blog-card-title">The Role of RTLS in Modern Healthcare</h4>
@@ -894,7 +945,7 @@
                     <div class="w-layout-hflex footer-top">
                         <div class="w-layout-hflex footer-top-left">
                             <a href="index.html" class="w-inline-block">
-                                <img src="https://placehold.co/400x100/ffffff/003366?text=INNOVATIVE+CONTROLS"
+                                <img src="https://placehold.co/400x100/ffffff/003366?text=INNOVATIVE+CONTROLS&font=Montserrat"
                                     loading="lazy" alt="Innovative Controls" height="45" class="footer-logo"
                                     style="object-fit: contain;" />
                             </a>
