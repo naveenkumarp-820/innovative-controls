@@ -1628,8 +1628,9 @@
 
     // Add local logo references exactly as requested
     clients.forEach((client, index) => {
-      client.logo = `logos/${index + 1}.png`;
-    });
+        // Just use the file name if they are in the same folder
+        client.logo = `${index + 1}.png`;
+      });
 
     const grid = document.getElementById('logoGrid');
     const ttrack = document.getElementById('ttrack');
