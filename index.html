@@ -1,1005 +1,1698 @@
 <!DOCTYPE html>
-<html data-wf-domain="finquick.webflow.io" data-wf-page="68ba784cb7526e83ec8f2187"
-    data-wf-site="68b12a0b7d578937c1b1d5ed" lang="en">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <title>Innovative Controls – Digital Transformation & Industrial Automation</title>
-    <meta
-        content="Distinguished Industrial Automation Solution provider, with 35 years of industry experience. We manage the entire process from design to creation, delivery, and commissioning of automation and electrical control panels."
-        name="description" />
-    <meta content="Innovative Controls – Digital Transformation & Industrial Automation" property="og:title" />
-    <meta
-        content="Distinguished Industrial Automation Solution provider, with 35 years of industry experience. We manage the entire process from design to creation, delivery, and commissioning of automation and electrical control panels."
-        property="og:description" />
-    <meta content="Innovative Controls – Digital Transformation & Industrial Automation" property="twitter:title" />
-    <meta content="Distinguished Industrial Automation Solution provider, with 35 years of industry experience."
-        property="twitter:description" />
-    <meta property="og:type" content="website" />
-    <meta content="summary_large_image" name="twitter:card" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <meta content="Apexinfo" name="generator" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innovative Controls – Industrial Automation Solutions</title>
+  <link rel="icon" type="image/png" href="fav.png">
+  <link rel="shortcut icon" href="fav.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <style>
+    /* ════ DESIGN SYSTEM & VARIABLES ════ */
+    :root {
+      --color-brand-dark: #070e20;
+      --color-brand-primary: #12335C;
+      --color-brand-accent: #FF6600;
+      --color-accent-hover: #E65C00;
 
-    <link href="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/css/finquick.webflow.shared.569d834a0.css"
-        rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/" rel="preconnect" />
-    <link href="https://fonts.gstatic.com/" rel="preconnect" crossorigin="anonymous" />
-    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
-    <script
-        type="text/javascript">WebFont.load({ google: { families: ["Phudu:300,regular,500,600,700,800,900", "DM Sans:regular,600,italic", "Montserrat:600,700"] } });</script>
-    <script
-        type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+      --color-surface-white: #FFFFFF;
+      --color-surface-light: #F4F7F9;
+      --color-surface-border: #E2E8F0;
 
-    <style>
-        /* Even Sized Grid for Business Segments */
-        .even-grid-container {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 24px;
-            width: 100%;
-            margin-top: 40px;
-        }
+      --color-text-main: #1E293B;
+      --color-text-muted: #64748B;
+      --color-text-inverse: #FFFFFF;
 
-        @media (max-width: 991px) {
-            .even-grid-container {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
+      --shadow-subtle: 0 4px 20px rgba(0, 0, 0, 0.05);
+      --shadow-hover: 0 10px 30px rgba(10, 17, 40, 0.1);
+      --radius-sm: 4px;
+      --radius-md: 8px;
+      --transition-fast: 0.2s ease;
+      --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 
-        @media (max-width: 479px) {
-            .even-grid-container {
-                grid-template-columns: 1fr;
-            }
-        }
+      --container-width: 1320px;
+    }
 
-        .even-grid-box {
-            background: #ffffff;
-            border: 1px solid #eaecf0;
-            border-radius: 16px;
-            padding: 30px 25px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-            box-sizing: border-box;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+    /* ════ RESET & BASE ════ */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        .even-grid-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
-        }
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
 
-        .even-grid-box h3 {
-            font-family: 'Phudu', sans-serif;
-            font-size: 20px;
-            font-weight: 700;
-            color: #111;
-            margin-bottom: 12px;
-            line-height: 1.3;
-        }
+    body {
+      font-family: 'Roboto', sans-serif;
+      color: var(--color-text-main);
+      background-color: var(--color-surface-white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
 
-        .even-grid-box p {
-            font-size: 15px;
-            color: #666;
-            line-height: 1.6;
-            margin: 0;
-        }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .font-heading {
+      font-family: 'Manrope', sans-serif;
+      font-weight: 700;
+      line-height: 1.2;
+    }
 
-        /* Infinite Sliding Banner Container */
-        .infinite-slider-container {
-            overflow: hidden;
-            white-space: nowrap;
-            width: 100%;
-            padding: 20px 0 40px 0;
-            position: relative;
-        }
+    .container {
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 5rem 2rem;
+    }
 
-        /* The moving track */
-        .infinite-slider-track {
-            display: inline-block;
-            animation: slide-left-to-right 60s linear infinite;
-        }
+    /* ════ TYPOGRAPHY & UTILITIES ════ */
+    .section-header {
+      margin-bottom: 3.5rem;
+      max-width: 700px;
+    }
 
-        .infinite-slider-track:hover {
-            animation-play-state: paused;
-        }
+    .section-header.center {
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
 
-        @keyframes slide-left-to-right {
-            0% {
-                transform: translateX(-50%);
-            }
+    .section-label {
+      display: inline-block;
+      font-size: 0.875rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--color-brand-accent);
+      margin-bottom: 1rem;
+    }
 
-            100% {
-                transform: translateX(0%);
-            }
-        }
+    .section-title {
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      color: var(--color-brand-dark);
+      margin-bottom: 1rem;
+    }
 
-        /* Styling for Gallery Banner Images */
-        .slider-img {
-            display: inline-block;
-            width: 450px;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 12px;
-            margin: 0 15px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-            vertical-align: middle;
-        }
+    .section-desc {
+      font-size: 1.125rem;
+      color: var(--color-text-muted);
+    }
 
-        /* Custom Client Card matching the Testimonial Design */
-        .custom-client-card {
-            display: inline-flex;
-            width: 420px;
-            min-height: 280px;
-            margin: 0 15px;
-            white-space: normal;
-            vertical-align: top;
-            text-align: left;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            border: 1px solid #eaecf0;
-            border-radius: 16px;
-            background: #fff;
-            padding: 35px 30px;
-        }
+    .bg-light {
+      background-color: var(--color-surface-light);
+    }
 
-        .custom-client-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
-            border-color: #003366;
-        }
+    .bg-dark {
+      background-color: var(--color-brand-dark);
+      color: var(--color-text-inverse);
+    }
 
-        .client-logo-img {
-            height: 50px;
-            width: auto;
-            object-fit: contain;
-            margin: 15px 0 20px 0;
-            border-radius: 6px;
-        }
+    .bg-dark .section-title {
+      color: var(--color-text-inverse);
+    }
 
-        /* Force perfectly even heights on the pricing cards */
-        .even-pricing-wrapper {
-            display: flex;
-            gap: 30px;
-            justify-content: center;
-            flex-wrap: wrap;
-            align-items: stretch;
-            /* Forces both child boxes to be the exact same height */
-        }
+    .bg-dark .section-desc {
+      color: #94A3B8;
+    }
 
-        .even-pricing-card {
-            flex: 1;
-            min-width: 320px;
-            max-width: 500px;
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-        }
+    /* ════ BUTTONS ════ */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.875rem 2rem;
+      font-family: 'Manrope', sans-serif;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition-smooth);
+      cursor: pointer;
+      border: 2px solid transparent;
+    }
 
-        .even-pricing-card>.pricin-card-inner {
-            flex: 1;
-            /* Pushes the inner content to fill the stretched card completely */
-            display: flex;
-            flex-direction: column;
-        }
-    </style>
+    .btn-primary {
+      background-color: var(--color-brand-accent);
+      color: var(--color-text-inverse);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--color-accent-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      background-color: transparent;
+      border-color: rgba(255, 255, 255, 0.3);
+      color: var(--color-text-inverse);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--color-surface-white);
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    /* ════ NAVIGATION ════ */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 85px;
+      background-color: var(--color-brand-dark);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 3rem;
+      transition: var(--transition-smooth);
+    }
+
+    nav.scrolled {
+      height: 75px;
+      background-color: rgba(7, 14, 32, 0.98);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .nav-logo img {
+      height: 45px;
+      width: auto;
+      display: block;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+      height: 100%;
+    }
+
+    .nav-item {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-item>a {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: rgba(255, 255, 255, 0.85);
+      text-decoration: none;
+      transition: var(--transition-fast);
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    .nav-item>a:hover {
+      color: var(--color-brand-accent);
+    }
+
+    .dropdown {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: var(--color-surface-white);
+      border-radius: 0 0 var(--radius-md) var(--radius-md);
+      box-shadow: var(--shadow-hover);
+      min-width: 280px;
+      padding: 1rem 0;
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: var(--transition-smooth);
+      border-top: 3px solid var(--color-brand-accent);
+    }
+
+    .nav-item:hover .dropdown {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .drop-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      transition: var(--transition-fast);
+    }
+
+    .drop-item:hover {
+      background-color: var(--color-surface-light);
+    }
+
+    .drop-item .icon {
+      color: var(--color-brand-primary);
+      width: 20px;
+      flex-shrink: 0;
+    }
+
+    .drop-item strong {
+      display: block;
+      color: var(--color-brand-dark);
+      font-size: 0.95rem;
+      margin-bottom: 0.2rem;
+    }
+
+    .drop-item span {
+      display: block;
+      color: var(--color-text-muted);
+      font-size: 0.8rem;
+    }
+
+    .nav-cta {
+      background-color: var(--color-brand-accent);
+      color: white !important;
+      padding: 0.6rem 1.5rem;
+      border-radius: var(--radius-sm);
+    }
+
+    .nav-cta:hover {
+      background-color: var(--color-accent-hover);
+    }
+
+    .mobile-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+    }
+
+    .mobile-toggle span {
+      width: 25px;
+      height: 2px;
+      background-color: white;
+      transition: var(--transition-fast);
+    }
+
+    /* ════ HERO SECTION ════ */
+    #hero {
+      position: relative;
+      padding: 180px 2rem 100px;
+      background-color: var(--color-brand-dark);
+      background-image: linear-gradient(135deg, rgba(18, 51, 92, 0.8) 0%, var(--color-brand-dark) 100%);
+      color: white;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1.25rem;
+      background: rgba(255, 102, 0, 0.15);
+      border: 1px solid rgba(255, 102, 0, 0.3);
+      color: var(--color-brand-accent);
+      font-family: 'Manrope', sans-serif;
+      font-weight: 700;
+      font-size: 0.85rem;
+      border-radius: 50px;
+      margin-bottom: 2rem;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-title {
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-title span {
+      color: var(--color-brand-accent);
+    }
+
+    .hero-desc {
+      font-size: 1.15rem;
+      color: #94A3B8;
+      max-width: 700px;
+      margin: 0 auto 3rem;
+      font-weight: 400;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      margin-top: 5rem;
+      padding-top: 3rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .stat-block {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-family: 'Manrope', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: white;
+      display: block;
+      line-height: 1.2;
+    }
+
+    .stat-label {
+      font-size: 0.85rem;
+      color: #94A3B8;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 500;
+    }
+
+    /* ════ ABOUT SECTION ════ */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+
+    .about-text p {
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+    }
+
+    .cert-tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+    }
+
+    .cert-tag {
+      background: var(--color-surface-white);
+      border: 1px solid var(--color-surface-border);
+      padding: 0.4rem 1rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--color-brand-primary);
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .about-features {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .feature-card {
+      display: flex;
+      gap: 1.25rem;
+      padding: 1.5rem;
+      background: var(--color-surface-white);
+      border: 1px solid var(--color-surface-border);
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-subtle);
+      transition: var(--transition-smooth);
+    }
+
+    .feature-card:hover {
+      border-color: var(--color-brand-primary);
+      transform: translateX(5px);
+    }
+
+    .fc-icon {
+      width: 40px;
+      height: 40px;
+      color: var(--color-brand-accent);
+      flex-shrink: 0;
+    }
+
+    .fc-title {
+      font-family: 'Manrope', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-brand-dark);
+      margin-bottom: 0.25rem;
+    }
+
+    .fc-desc {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+
+    /* ════ SEGMENTS GRID ════ */
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .segment-card {
+      background: var(--color-surface-white);
+      padding: 2.5rem 2rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--color-surface-border);
+      transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .segment-card:hover {
+      border-color: var(--color-brand-accent);
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-5px);
+    }
+
+    .segment-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background: var(--color-brand-accent);
+      transition: var(--transition-smooth);
+    }
+
+    .segment-card:hover::before {
+      width: 100%;
+    }
+
+    .seg-icon {
+      width: 36px;
+      height: 36px;
+      color: var(--color-brand-primary);
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .segment-card:hover .seg-icon {
+      color: var(--color-brand-accent);
+    }
+
+    .seg-title {
+      font-size: 1.1rem;
+      margin-bottom: 0.75rem;
+      color: var(--color-brand-dark);
+    }
+
+    .seg-desc {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+
+    /* ════ PRODUCTS ════ */
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1rem;
+    }
+
+    .product-pill {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1.5rem;
+      background: var(--color-surface-white);
+      border: 1px solid var(--color-surface-border);
+      border-radius: var(--radius-sm);
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--color-brand-dark);
+      transition: var(--transition-fast);
+    }
+
+    .product-pill:hover {
+      border-color: var(--color-brand-primary);
+      color: var(--color-brand-primary);
+      background: var(--color-surface-light);
+    }
+
+    .product-pill svg {
+      width: 18px;
+      height: 18px;
+      color: var(--color-brand-accent);
+    }
+
+    /* ════ INDUSTRIES ════ */
+    .industry-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .ind-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+
+    .ind-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: var(--radius-sm);
+      font-weight: 500;
+      transition: var(--transition-fast);
+    }
+
+    .ind-item:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--color-brand-accent);
+    }
+
+    .ind-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--color-brand-accent);
+      border-radius: 50%;
+    }
+
+    /* ════ SERVICES ════ */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .svc-card {
+      padding: 2.5rem;
+      background: var(--color-surface-white);
+      border: 1px solid var(--color-surface-border);
+      border-radius: var(--radius-md);
+      text-align: center;
+      transition: var(--transition-smooth);
+    }
+
+    .svc-card:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-5px);
+    }
+
+    .svc-icon {
+      width: 50px;
+      height: 50px;
+      margin: 0 auto 1.5rem;
+      background: var(--color-surface-light);
+      color: var(--color-brand-primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ════ CLIENTS (WITH FULL COLOR ENABLED) ════ */
+    .logo-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1rem;
+    }
+
+    .client-card {
+      background: var(--color-surface-white);
+      padding: 22px 16px 18px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 152px;
+      position: relative;
+      overflow: hidden;
+      transition: background 0.25s, transform 0.25s, box-shadow 0.25s;
+      border: 1px solid var(--color-surface-border);
+      border-radius: var(--radius-md);
+      cursor: default;
+    }
+
+    .client-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--color-brand-accent);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s;
+    }
+
+    .client-card:hover {
+      box-shadow: var(--shadow-hover);
+      transform: translateY(-3px);
+      border-color: transparent;
+    }
+
+    .client-card:hover::after {
+      transform: scaleX(1);
+    }
+
+    .cl-logo-shell {
+      width: 100%;
+      min-height: 58px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .client-card img {
+      width: 100%;
+      max-width: 100px;
+      max-height: 44px;
+      object-fit: contain;
+      object-position: center;
+      /* GRAYSCALE FILTER REMOVED SO IMAGES SHOW IN FULL COLOR */
+      transition: transform 0.3s;
+      display: block;
+    }
+
+    .client-card:hover img {
+      transform: scale(1.04);
+    }
+
+    .cl-fallback {
+      width: 84px;
+      min-height: 54px;
+      padding: 12px 10px;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--color-surface-border);
+      background: var(--color-surface-light);
+      border-radius: 16px 6px 16px 6px;
+      font-family: 'Manrope', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: var(--color-brand-primary);
+      text-transform: uppercase;
+      line-height: 1;
+    }
+
+    .client-card.logo-missing .cl-fallback {
+      display: flex;
+    }
+
+    .cl-tlogo {
+      font-family: 'Manrope', sans-serif;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-brand-dark);
+      text-align: center;
+      transition: color 0.3s;
+      line-height: 1.25;
+      min-height: 2.5em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .client-card:hover .cl-tlogo {
+      color: var(--color-brand-accent);
+    }
+
+    .cl-sector {
+      font-size: 10px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-text-muted);
+      font-family: 'Manrope', sans-serif;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    /* Ticker */
+    .ticker-container {
+      overflow: hidden;
+      background: var(--color-brand-dark);
+      padding: 1.5rem 0;
+      border-top: 1px solid var(--color-surface-border);
+      border-bottom: 1px solid var(--color-surface-border);
+    }
+
+    .ticker-track {
+      display: flex;
+      align-items: center;
+      width: max-content;
+      animation: tick 35s linear infinite;
+    }
+
+    @keyframes tick {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .ticker-item {
+      color: rgba(255, 255, 255, 0.6);
+      font-weight: 700;
+      font-family: 'Manrope', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0 2rem;
+      border-right: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .ticker-item svg {
+      width: 14px;
+      color: var(--color-brand-accent);
+    }
+
+    /* ════ CONTACT ════ */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+    }
+
+    .contact-info-block {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .ci-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--color-surface-light);
+      color: var(--color-brand-accent);
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .ci-text h4 {
+      font-size: 1.05rem;
+      color: var(--color-brand-dark);
+      margin-bottom: 0.2rem;
+    }
+
+    .ci-text p {
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+    }
+
+    .contact-form {
+      background: var(--color-surface-white);
+      padding: 3rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-hover);
+      border: 1px solid var(--color-surface-border);
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--color-brand-dark);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 0.875rem 1rem;
+      border: 1px solid var(--color-surface-border);
+      border-radius: var(--radius-sm);
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: var(--transition-fast);
+      background: var(--color-surface-light);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--color-brand-primary);
+      background: var(--color-surface-white);
+      box-shadow: 0 0 0 3px rgba(18, 51, 92, 0.1);
+    }
+
+    textarea.form-control {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    /* ════ "BIG WEBSITE" PROFESSIONAL FOOTER ════ */
+    .site-footer {
+      background-color: #050B14;
+      color: #94A3B8;
+      padding-top: 5rem;
+      border-top: 4px solid var(--color-brand-accent);
+      font-size: 0.9rem;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    .footer-brand img {
+      height: 40px;
+      margin-bottom: 1.5rem;
+      filter: brightness(0) invert(1);
+    }
+
+    .footer-brand p {
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .social-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      color: white;
+      transition: var(--transition-fast);
+    }
+
+    .social-link:hover {
+      background: var(--color-brand-accent);
+      transform: translateY(-2px);
+    }
+
+    .social-link svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .footer-links-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+    }
+
+    .footer-col h4 {
+      color: white;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-col ul a {
+      color: #94A3B8;
+      text-decoration: none;
+      transition: var(--transition-fast);
+      display: inline-block;
+    }
+
+    .footer-col ul a:hover {
+      color: var(--color-brand-accent);
+      transform: translateX(3px);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding: 2rem 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom .legal-links {
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .footer-bottom .legal-links a {
+      color: #94A3B8;
+      text-decoration: none;
+      transition: var(--transition-fast);
+    }
+
+    .footer-bottom .legal-links a:hover {
+      color: white;
+    }
+
+    .developer-credit strong {
+      color: white;
+    }
+
+    /* ════ RESPONSIVE ════ */
+    @media (max-width: 1024px) {
+      .grid-4 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .grid-3 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid,
+      .industry-layout,
+      .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .logo-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      nav {
+        padding: 0 2rem;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu {
+        display: none;
+      }
+
+      .mobile-toggle {
+        display: flex;
+      }
+
+      .nav-menu.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--color-brand-dark);
+        padding: 1.5rem;
+        gap: 1rem;
+        align-items: flex-start;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .dropdown {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        box-shadow: none;
+        border: none;
+        padding: 0.5rem 0 0 1rem;
+        display: none;
+        background: transparent;
+      }
+
+      .nav-item:hover .dropdown {
+        display: block;
+      }
+
+      .drop-item strong {
+        color: white;
+      }
+
+      .hero-title {
+        font-size: 2.25rem;
+      }
+
+      .hero-stats {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-form {
+        padding: 2rem 1.5rem;
+      }
+
+      .ind-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .logo-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-links-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+
+      .grid-4,
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-links-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <div id="luxy" class="page-wrapper">
 
-        <div class="navbar-logo-left">
-            <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease"
-                data-easing2="ease" role="banner" class="navbar-logo-left-container shadow-three w-nav">
-                <div class="navbar-wrapper">
-                    <a href="index.html" class="navbar-brand w-nav-brand">
-                        <img src="https://placehold.co/400x100/ffffff/003366?text=INNOVATIVE+CONTROLS&font=Montserrat"
-                            loading="lazy" alt="Innovative Controls" height="45" class="site-logo"
-                            style="object-fit: contain;" />
-                    </a>
-                    <nav role="navigation" class="nav-menu-wrapper w-nav-menu">
-                        <ul role="list" class="nav-menu-two w-list-unstyled">
-                            <li>
-                                <div data-hover="false" data-delay="0" class="nav-dropdown w-dropdown">
-                                    <div class="nav-dropdown-toggle w-dropdown-toggle">
-                                        <div class="nav-dropdown-icon-2 w-icon-dropdown-toggle"></div>
-                                        <div class="text-block">Home</div>
-                                    </div>
-                                    <nav class="nav-dropdown-list-2 shadow-three mobile-shadow-hide w-dropdown-list">
-                                        <a href="home-1.html" class="nav-link w-dropdown-link">Corporate Overview</a>
-                                        <a href="home-2.html" aria-current="page"
-                                            class="nav-link w-dropdown-link w--current">Automation Solutions</a>
-                                    </nav>
-                                </div>
-                            </li>
-                            <li><a href="about-us.html" class="nav-link">About Us</a></li>
-                            <li><a href="features.html" class="nav-link">Capabilities</a></li>
-                            <li><a href="how-it-works.html" class="nav-link">Industries</a></li>
-                            <li>
-                                <div data-hover="false" data-delay="0" class="nav-dropdown w-dropdown">
-                                    <div class="nav-dropdown-toggle w-dropdown-toggle">
-                                        <div class="nav-dropdown-icon-2 w-icon-dropdown-toggle"></div>
-                                        <div>Resources</div>
-                                    </div>
-                                    <nav class="nav-dropdown-list-2 shadow-three mobile-shadow-hide w-dropdown-list">
-                                        <a href="index.html" class="nav-link w-dropdown-link">Digital Insights</a>
-                                        <a href="blog.html" class="nav-link w-dropdown-link">Case Studies</a>
-                                        <a href="contact-us.html" class="nav-link w-dropdown-link">Contact us</a>
-                                    </nav>
-                                </div>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="w-layout-hflex header-buttons-div">
-                        <a href="contact-us.html" class="primary-button w-button">Partner With Us</a>
-                        <div class="menu-button w-nav-button">
-                            <div class="w-icon-nav-menu"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <nav id="navbar">
+    <a href="#" class="nav-logo" aria-label="Innovative Controls home">
+      <img src="image.png" alt="Innovative Controls logo"
+        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'220\' height=\'45\'%3E%3Ctext x=\'0\' y=\'50%25\' dominant-baseline=\'middle\' font-family=\'sans-serif\' font-weight=\'bold\' font-size=\'20\' fill=\'%23ffffff\'%3EInnovative Controls%3C/text%3E%3C/svg%3E'">
+    </a>
+
+    <ul class="nav-menu" id="navMenu">
+      <li class="nav-item">
+        <a href="#about">About ▾</a>
+        <div class="dropdown">
+          <a href="#about" class="drop-item">
+            <div class="icon" data-icon="factory"></div>
+            <div><strong>Company Overview</strong><span>35 years of excellence</span></div>
+          </a>
+          <a href="#about" class="drop-item">
+            <div class="icon" data-icon="award"></div>
+            <div><strong>Certifications</strong><span>ISO, CSA, NEMA, IEC, UL</span></div>
+          </a>
+          <a href="#about" class="drop-item">
+            <div class="icon" data-icon="building"></div>
+            <div><strong>Our Facility</strong><span>6,000 Sq.Ft plant, Coimbatore</span></div>
+          </a>
         </div>
+      </li>
+      <li class="nav-item">
+        <a href="#segments">Solutions ▾</a>
+        <div class="dropdown" style="min-width: 320px;">
+          <a href="#segments" class="drop-item">
+            <div class="icon" data-icon="cpu"></div>
+            <div><strong>System Integration & Automation</strong><span>Process, Machine & Energy</span></div>
+          </a>
+          <a href="#segments" class="drop-item">
+            <div class="icon" data-icon="robot"></div>
+            <div><strong>Robotics & AI Systems</strong><span>Smart industrial platforms</span></div>
+          </a>
+          <a href="#segments" class="drop-item">
+            <div class="icon" data-icon="building"></div>
+            <div><strong>BMS & Healthcare</strong><span>Facility management control</span></div>
+          </a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="#panels">Products ▾</a>
+        <div class="dropdown">
+          <a href="#panels" class="drop-item">
+            <div class="icon" data-icon="server"></div>
+            <div><strong>Industrial Control Panels</strong><span>MCCs, PCCs, LT/HT, PLC</span></div>
+          </a>
+          <a href="#panels" class="drop-item">
+            <div class="icon" data-icon="activity"></div>
+            <div><strong>Process & Speciality</strong><span>ETP, STP, RO, Flameproof</span></div>
+          </a>
+        </div>
+      </li>
+      <li class="nav-item"><a href="#verticals">Industries</a></li>
+      <li class="nav-item"><a href="#clients">Clients</a></li>
+      <li class="nav-item"><a href="#contact" class="nav-cta">Contact Us</a></li>
+    </ul>
 
-        <section class="hero-section-saas">
-            <div class="w-layout-blockcontainer container-hero w-container">
-                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b15310377e2ca4f9bd8999_Trust.svg"
-                    loading="lazy" alt="" />
-                <h1 class="hero-h1">Digital Transformation &<br />—<span class="text-color-sec">Industrial
-                        Automation</span></h1>
-                <p class="hero-p">Empowering industries with intelligent control systems, energy management, and
-                    scalable automation. For 35 years, we have managed the entire lifecycle—from design and panel
-                    manufacturing to IIoT integration and commissioning.</p>
-                <div class="w-layout-hflex hero-buttons">
-                    <a href="features.html" class="primary-button w-button">Explore Our Solutions</a>
-                    <a href="contact-us.html" class="secondary-button w-button">Consult an Expert</a>
-                </div>
-                <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    loading="lazy" width="1130" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px"
-                    alt="Innovative Controls Manufacturing Facility" class="hero-d-image"
-                    style="border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);" />
+    <div class="mobile-toggle" onclick="document.getElementById('navMenu').classList.toggle('open')">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
 
-                <div class="grid-4cl-1r archivement-section-saas">
-                    <div class="w-layout-vflex icon-info-box">
-                        <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b16e8d154f3af820cec59c_Group 24.svg"
-                            loading="lazy" alt="" />
-                        <h4 class="icon-box-title">35 Years</h4>
-                        <div class="body-small light-color">of engineering <br />excellence</div>
-                    </div>
-                    <div class="w-layout-vflex icon-info-box">
-                        <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b16e8d1564bfb8b2755e48_Group 21.svg"
-                            loading="lazy" alt="" />
-                        <h4 class="icon-box-title">6000 Sq.Ft</h4>
-                        <div class="body-small light-color">advanced manufacturing facility</div>
-                    </div>
-                    <div class="w-layout-vflex icon-info-box">
-                        <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b16e8d883957f3df075235_Group 22.svg"
-                            loading="lazy" alt="" />
-                        <h4 class="icon-box-title">8 Segments</h4>
-                        <div class="body-small light-color">strategic industrial sectors</div>
-                    </div>
-                    <div class="w-layout-vflex icon-info-box">
-                        <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b16e8dd6232f4d6a2812ae_Group 23.svg"
-                            loading="lazy" alt="" />
-                        <h4 class="icon-box-title">Global Standards</h4>
-                        <div class="body-small light-color">ISO, CSA, NEMA, IEC, UL</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge"><span data-icon="check" style="width:14px;"></span> ISO CERTIFIED INDUSTRIAL AUTOMATION
+      </div>
+      <h1 class="hero-title">Engineering <span>Intelligence</span><br>for Industry 4.0</h1>
+      <p class="hero-desc">End-to-end industrial automation solutions—from complex system integration to custom control
+        panel manufacturing. Trusted globally for 35 years.</p>
+      <div class="hero-actions">
+        <a href="#segments" class="btn btn-primary">Explore Solutions</a>
+        <a href="#contact" class="btn btn-outline">Request a Quote</a>
+      </div>
 
-        <section class="section">
-            <div class="w-layout-blockcontainer container align-center w-container">
-                <div class="sub-heading">Strategic Expertise</div>
-                <h2 class="section-heading">Connected Industrial<br /><span class="gtext">Architecture</span></h2>
-                <div class="body-base light align-center">Delivering integrated, future-ready automation platforms
-                    across a broad spectrum of industrial verticals.</div>
+      <div class="hero-stats">
+        <div class="stat-block"><span class="stat-number">35+</span><span class="stat-label">Years Exp.</span></div>
+        <div class="stat-block"><span class="stat-number">18+</span><span class="stat-label">Industries</span></div>
+        <div class="stat-block"><span class="stat-number">8</span><span class="stat-label">Core Segments</span></div>
+        <div class="stat-block"><span class="stat-number">6K</span><span class="stat-label">Sq.Ft Facility</span></div>
+      </div>
+    </div>
+  </section>
 
-                <div class="even-grid-container">
-                    <div class="even-grid-box">
-                        <h3>System Integration</h3>
-                        <p>End-to-end integration of complex industrial and enterprise architectures to ensure seamless
-                            plant connectivity.</p>
-                    </div>
-                    <div class="even-grid-box">
-                        <h3>Process Automation</h3>
-                        <p>Streamlined automation of manufacturing workflows, boosting overall output and operational
-                            efficiency.</p>
-                    </div>
-                    <div class="even-grid-box">
-                        <h3>Energy Management</h3>
-                        <p>Intelligent monitoring and optimization of power consumption to drive industrial
-                            sustainability.</p>
-                    </div>
-                    <div class="even-grid-box">
-                        <h3>Machine Control</h3>
-                        <p>High-precision control systems tailored for demanding industrial machinery and robotics.</p>
-                    </div>
-                    <div class="even-grid-box">
-                        <h3>Building Management</h3>
-                        <p>Comprehensive facility management (BMS) for HVAC, lighting, and environmental safety.</p>
-                    </div>
-                    <div class="even-grid-box">
-                        <h3>Healthcare Solutions</h3>
-                        <p>Specialized building automation and real-time location services (RTLS) for critical care
-                            environments.</p>
-                    </div>
-                    <div class="even-grid-box">
-                        <h3>Turnkey Execution</h3>
-                        <p>Complete lifecycle services from conceptual engineering and panel build to final
-                            commissioning.</p>
-                    </div>
-                    <div class="even-grid-box">
-                        <h3>IIoT & Analytics</h3>
-                        <p>Centralized cloud dashboards providing real-time data visibility for proactive maintenance.
-                        </p>
-                    </div>
-                </div>
+  <section id="about" class="container">
+    <div class="about-grid">
+      <div>
+        <span class="section-label">Corporate Overview</span>
+        <h2 class="section-title">Redefining Industrial <span>Efficiency</span></h2>
+        <div class="about-text">
+          <p>Innovative Controls is a distinguished Automation Solution provider with over three decades of industry
+            experience. We are supported by highly skilled engineers dedicated to bringing precision and reliability to
+            every project.</p>
+          <p>Operating from our state-of-the-art 6,000 Sq.Ft facility in Coimbatore, we manage the entire lifecycle of
+            automation—from conceptual design to panel creation, delivery, and final commissioning.</p>
+        </div>
+        <div class="cert-tags">
+          <span class="cert-tag">ISO 9001</span><span class="cert-tag">CSA</span><span class="cert-tag">NEMA</span>
+          <span class="cert-tag">IEC</span><span class="cert-tag">UL</span><span class="cert-tag">NFPA79</span>
+        </div>
+      </div>
+      <div class="about-features">
+        <div class="feature-card">
+          <div class="fc-icon" data-icon="settings"></div>
+          <div>
+            <h3 class="fc-title">Machine Automation</h3>
+            <p class="fc-desc">Precision control logic for material handling, packaging, and high-speed motion.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="fc-icon" data-icon="git-merge"></div>
+          <div>
+            <h3 class="fc-title">Process Automation</h3>
+            <p class="fc-desc">Streamlined continuous automation across manufacturing workflows.</p>
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="fc-icon" data-icon="grid"></div>
+          <div>
+            <h3 class="fc-title">Building Management</h3>
+            <p class="fc-desc">Integrated intelligent platforms for smart, sustainable infrastructure.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            </div>
-        </section>
+  <section id="segments" class="bg-light">
+    <div class="container">
+      <div class="section-header center">
+        <span class="section-label">Core Expertise</span>
+        <h2 class="section-title">Strategic Business <span>Segments</span></h2>
+        <p class="section-desc">We deliver specialized end-to-end automation expertise across eight critical operational
+          domains.</p>
+      </div>
+      <div class="grid-4">
+        <div class="segment-card">
+          <div class="seg-icon" data-icon="share-2"></div>
+          <h3 class="seg-title">System Integration</h3>
+          <p class="seg-desc">Seamless integration of complex plant-floor devices with enterprise systems.</p>
+        </div>
+        <div class="segment-card">
+          <div class="seg-icon" data-icon="zap"></div>
+          <h3 class="seg-title">Process Automation</h3>
+          <p class="seg-desc">Optimized control algorithms for continuous and batch manufacturing.</p>
+        </div>
+        <div class="segment-card">
+          <div class="seg-icon" data-icon="battery-charging"></div>
+          <h3 class="seg-title">Energy Management</h3>
+          <p class="seg-desc">Real-time monitoring and analytics to minimize energy consumption.</p>
+        </div>
+        <div class="segment-card">
+          <div class="seg-icon" data-icon="monitor"></div>
+          <h3 class="seg-title">Machine Control</h3>
+          <p class="seg-desc">High-precision PLC/HMI solutions for specialized industrial equipment.</p>
+        </div>
+        <div class="segment-card">
+          <div class="seg-icon" data-icon="cpu"></div>
+          <h3 class="seg-title">Robotics</h3>
+          <p class="seg-desc">Turnkey robotic cells and collaborative robotics implementation.</p>
+        </div>
+        <div class="segment-card">
+          <div class="seg-icon" data-icon="layers"></div>
+          <h3 class="seg-title">AI-Powered Systems</h3>
+          <p class="seg-desc">Next-gen automation leveraging predictive maintenance and machine learning.</p>
+        </div>
+        <div class="segment-card">
+          <div class="seg-icon" data-icon="home"></div>
+          <h3 class="seg-title">Building Mgmt (BMS)</h3>
+          <p class="seg-desc">Centralized control of HVAC, lighting, and security systems.</p>
+        </div>
+        <div class="segment-card">
+          <div class="seg-icon" data-icon="activity"></div>
+          <h3 class="seg-title">Healthcare Solutions</h3>
+          <p class="seg-desc">Validation-ready automation tailored for critical healthcare environments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-        <section class="section">
-            <div class="w-layout-blockcontainer container align-center w-container">
-                <div class="sub-heading">Lifecycle Services</div>
-                <h2 class="section-heading">End-to-End Project<br /><span class="gtext">Execution</span></h2>
-                <div class="body-base light align-center">We bridge the gap between operational technology (OT) and
-                    information technology (IT) at every stage of your project.</div>
+  <section id="panels" class="container">
+    <div class="section-header center">
+      <span class="section-label">Manufacturing Division</span>
+      <h2 class="section-title">Control Panel <span>Portfolio</span></h2>
+      <p class="section-desc">Every panel is built in our ISO-compliant facility, rigorously tested, and certified to
+        meet international electrical standards.</p>
+    </div>
+    <div class="product-grid" id="panelGrid">
+    </div>
+  </section>
 
-                <div class="w-layout-hflex info-section">
-                    <div class="info-section-left">
-                        <h2>Consult & Design</h2>
-                        <p class="text-light">Comprehensive system studies, hardware selection, PLC/SCADA architecture
-                            planning, and tailored software design to meet future-ready goals.</p>
-                    </div>
-                    <div class="info-section-right-saas">
-                        <img src="https://images.pexels.com/photos/3862632/pexels-photo-3862632.jpeg?auto=compress&cs=tinysrgb&w=800"
-                            loading="lazy" alt="Design Architecture" style="border-radius: 12px;" />
-                    </div>
-                </div>
+  <section id="verticals" class="bg-dark">
+    <div class="container industry-layout">
+      <div>
+        <span class="section-label">Global Reach</span>
+        <h2 class="section-title">Serving 18+ Industry <span>Verticals</span></h2>
+        <p class="section-desc" style="margin-bottom: 2rem;">We possess deep domain expertise across a broad spectrum of
+          industries, allowing us to engineer solutions that meet specific regulatory and operational demands.</p>
+        <a href="#contact" class="btn btn-primary">Discuss Your Project</a>
+      </div>
+      <div class="ind-grid" id="vertGrid">
+      </div>
+    </div>
+  </section>
 
+  <section id="services" class="container">
+    <div class="section-header center">
+      <span class="section-label">Lifecycle Support</span>
+      <h2 class="section-title">Comprehensive <span>Services</span></h2>
+      <p class="section-desc">From initial concept to final commissioning and ongoing support.</p>
+    </div>
+    <div class="grid-3">
+      <div class="svc-card">
+        <div class="svc-icon" data-icon="search"></div>
+        <h3 class="seg-title">System Study & Design</h3>
+        <p class="seg-desc">In-depth system analysis, hardware architecture selection, and PLC/HMI/SCADA software
+          engineering.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon" data-icon="tool"></div>
+        <h3 class="seg-title">Field & Commissioning</h3>
+        <p class="seg-desc">Instrument selection, detailed field device configuration, and rigorous site acceptance
+          testing (SAT).</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon" data-icon="wifi"></div>
+        <h3 class="seg-title">Remote Monitoring</h3>
+        <p class="seg-desc">Implementation of automated reporting, IoT telemetry, and 24/7 remote operational support.
+        </p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon" data-icon="book-open"></div>
+        <h3 class="seg-title">Training & Docs</h3>
+        <p class="seg-desc">Comprehensive operator training programs and detailed as-built documentation delivery.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon" data-icon="zap"></div>
+        <h3 class="seg-title">Energy Management</h3>
+        <p class="seg-desc">Power SCADA deployment, substation automation, and electrical harmonics mitigation.</p>
+      </div>
+      <div class="svc-card">
+        <div class="svc-icon" data-icon="shield"></div>
+        <h3 class="seg-title">Security & IoT</h3>
+        <p class="seg-desc">Industrial cybersecurity frameworks and secure cloud-powered analytics integration.</p>
+      </div>
+    </div>
+  </section>
 
-                <div class="w-layout-hflex info-section">
-                    <div class="info-section-left">
-                        <h2>Operate & Maintain</h2>
-                        <p class="text-light">Seamless commissioning, operator training, centralized analytics
-                            platforms, and 24x7 remote monitoring support.</p>
-                    </div>
-                    <div class="info-section-right-saas">
-                        <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800"
-                            loading="lazy" alt="Operations" style="border-radius: 12px;" />
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="w-layout-blockcontainer container align-center w-container">
-                <div class="sub-heading">Industrial Automation Gallery</div>
-                <h2 class="section-heading">Visibility Across Your<br /><span class="gtext">Entire Ecosystem</span></h2>
-                <div class="body-base light align-center">From MCC control panels to real-time centralized management
-                    platforms.</div>
-            </div>
-
-            <div class="infinite-slider-container" style="margin-top: 20px;">
-                <div class="infinite-slider-track">
-                    <img src="https://images.pexels.com/photos/2085832/pexels-photo-2085832.jpeg?auto=compress&cs=tinysrgb&w=800"
-                        alt="BMS Software" class="slider-img" />
-                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800"
-                        alt="Control Panel" class="slider-img" />
-                    <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800"
-                        alt="Data Analytics" class="slider-img" />
-
-                    <img src="https://images.pexels.com/photos/2085832/pexels-photo-2085832.jpeg?auto=compress&cs=tinysrgb&w=800"
-                        alt="BMS Software" class="slider-img" />
-                    <img src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800"
-                        alt="Control Panel" class="slider-img" />
-                    <img src="https://images.pexels.com/photos/12052042/pexels-photo-12052042.jpeg?auto=compress&cs=tinysrgb&w=800"
-                        alt="Robotics" class="slider-img" />
-                    <img src="https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800"
-                        alt="Data Analytics" class="slider-img" />
-                </div>
-            </div>
-        </section>
-
-        <section class="section" style="margin-top: 40px;">
-            <div class="w-layout-blockcontainer container align-center w-container">
-                <div class="sub-heading">Solution Architectures</div>
-                <h2 class="section-heading">Scalable Automation Packages</h2>
-                <div class="body-base light align-center">Choose the engagement model that best aligns with your
-                    facility management and plant control requirements.</div>
-
-                <div class="even-pricing-wrapper">
-
-                    <div class="small-pricing-card even-pricing-card">
-                        <div class="w-layout-vflex pricin-card-inner">
-                            <div class="pro-label">Hardware & Panels</div>
-                            <div class="w-layout-hflex price-wraper">
-                                <div class="small-price">Build</div>
-                                <p class="price-discription">Custom Panel<br />Manufacturing</p>
-                            </div>
-                            <a href="contact-us.html" target="_blank" class="secondary-button full-w w-button">Request
-                                Quote</a>
-                            <div class="w-layout-vflex custom-bullet-wraper" style="margin-top:20px;">
-                                <div class="w-layout-hflex custom-bullet"><img
-                                        src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b584b4be7468ccf2b93516_Check.svg"
-                                        loading="lazy" alt="" />
-                                    <div class="body-base">MCCs, iMCCs & PCCs</div>
-                                </div>
-                                <div class="w-layout-hflex custom-bullet"><img
-                                        src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b584b4be7468ccf2b93516_Check.svg"
-                                        loading="lazy" alt="" />
-                                    <div class="body-base">PLC & APFC Panel Design</div>
-                                </div>
-                                <div class="w-layout-hflex custom-bullet"><img
-                                        src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b584b4be7468ccf2b93516_Check.svg"
-                                        loading="lazy" alt="" />
-                                    <div class="body-base">VFD Control Drives</div>
-                                </div>
-                                <div class="w-layout-hflex custom-bullet"><img
-                                        src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b584b4be7468ccf2b93516_Check.svg"
-                                        loading="lazy" alt="" />
-                                    <div class="body-base">Flameproof & Hazardous Panels</div>
-                                </div>
-                                <div class="w-layout-hflex custom-bullet"><img
-                                        src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b584b4be7468ccf2b93516_Check.svg"
-                                        loading="lazy" alt="" />
-                                    <div class="body-base">ISI, CSA, UL & NFPA79 Standards</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="small-pricing-card even-pricing-card">
-                        <div class="w-layout-vflex pricin-card-inner">
-                            <div class="plus-label">Turnkey Solutions</div>
-                            <div class="w-layout-hflex price-wraper">
-                                <div class="small-price">Integrate</div>
-                                <p class="price-discription">Process Automation<br />& IIoT Integration</p>
-                            </div>
-                            <a href="contact-us.html" target="_blank" class="primary-button full-w w-button">Consult
-                                Engineers</a>
-                            <div class="w-layout-vflex custom-bullet-wraper" style="margin-top:20px;">
-                                <div class="w-layout-hflex custom-bullet"><img
-                                        src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b584b4be7468ccf2b93516_Check.svg"
-                                        loading="lazy" alt="" />
-                                    <div class="body-base">Complete IT/OT System Study</div>
-                                </div>
-                                <div class="w-layout-hflex custom-bullet"><img
-                                        src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b584b4be7468ccf2b93516_Check.svg"
-                                        loading="lazy" alt="" />
-                                    <div class="body-base">SCADA, RTLS & Analytics Software</div>
-                                </div>
-                                <div class="w-layout-hflex custom-bullet"><img
-                                        src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b584b4be7468ccf2b93516_Check.svg"
-                                        loading="lazy" alt="" />
-                                    <div class="body-base">Energy Optimization Algorithms</div>
-                                </div>
-                                <div class="w-layout-hflex custom-bullet"><img
-                                        src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b584b4be7468ccf2b93516_Check.svg"
-                                        loading="lazy" alt="" />
-                                    <div class="body-base">Predictive Maintenance Setup</div>
-                                </div>
-                                <div class="w-layout-hflex custom-bullet"><img
-                                        src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b584b4be7468ccf2b93516_Check.svg"
-                                        loading="lazy" alt="" />
-                                    <div class="body-base">Full Commissioning & Operator Training</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="w-layout-blockcontainer container align-center w-container">
-                <div class="sub-heading">Global Clientele</div>
-                <h2 class="section-heading">Trusted by Industry Leaders</h2>
-                <div class="body-base light align-center">Driving digital transformation and robust hardware solutions
-                    for the world's most demanding sectors.</div>
-            </div>
-
-            <div class="infinite-slider-container" style="background: transparent; margin-top: 30px;">
-                <div class="infinite-slider-track">
-
-                    <div class="slide-content-wrapper-testimonial custom-client-card">
-                        <div class="w-layout-vflex tstimonial-detailes">
-                            <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Enterprise Partner</div>
-                            </div>
-                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=ISRO&font=Montserrat"
-                                class="client-logo-img" alt="ISRO" />
-                            <p class="testimonial" style="font-size:15px; color:#444;">The Indian Space Research
-                                Organisation is the national space agency of India. We support their infrastructure with
-                                mission-critical automation and centralized control architectures.</p>
-                            <div class="author-details">
-                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Aerospace
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide-content-wrapper-testimonial custom-client-card">
-                        <div class="w-layout-vflex tstimonial-detailes">
-                            <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Enterprise Partner</div>
-                            </div>
-                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=BHEL&font=Montserrat"
-                                class="client-logo-img" alt="BHEL" />
-                            <p class="testimonial" style="font-size:15px; color:#444;">Bharat Heavy Electricals Limited
-                                is a leading engineering enterprise. We provide advanced process optimization and
-                                safety-rated panels for their heavy engineering facilities.</p>
-                            <div class="author-details">
-                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Heavy
-                                    Equipment</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide-content-wrapper-testimonial custom-client-card">
-                        <div class="w-layout-vflex tstimonial-detailes">
-                            <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Enterprise Partner</div>
-                            </div>
-                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=TATA&font=Montserrat"
-                                class="client-logo-img" alt="Tata" />
-                            <p class="testimonial" style="font-size:15px; color:#444;">Tata is a global conglomerate. We
-                                ensure high-efficiency production lines across their manufacturing divisions through
-                                smart integration and lifecycle services.</p>
-                            <div class="author-details">
-                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Conglomerate
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide-content-wrapper-testimonial custom-client-card">
-                        <div class="w-layout-vflex tstimonial-detailes">
-                            <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Enterprise Partner</div>
-                            </div>
-                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=Saint-Gobain&font=Montserrat"
-                                class="client-logo-img" alt="Saint-Gobain" />
-                            <p class="testimonial" style="font-size:15px; color:#444;">A multinational corporation
-                                producing high-performance materials. We deliver robust control panels and drive
-                                sustainable energy management for their operations.</p>
-                            <div class="author-details">
-                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Glass &
-                                    Materials</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide-content-wrapper-testimonial custom-client-card">
-                        <div class="w-layout-vflex tstimonial-detailes">
-                            <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Enterprise Partner</div>
-                            </div>
-                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=Hyundai&font=Montserrat"
-                                class="client-logo-img" alt="Hyundai" />
-                            <p class="testimonial" style="font-size:15px; color:#444;">A global leader in automotive
-                                manufacturing. We deploy precision machine automation to optimize their high-demand
-                                assembly lines and robotics integration.</p>
-                            <div class="author-details">
-                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Automotive
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide-content-wrapper-testimonial custom-client-card">
-                        <div class="w-layout-vflex tstimonial-detailes">
-                            <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Enterprise Partner</div>
-                            </div>
-                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=PepsiCo&font=Montserrat"
-                                class="client-logo-img" alt="PepsiCo" />
-                            <p class="testimonial" style="font-size:15px; color:#444;">A global food and beverage
-                                leader. We implement intelligent machine automation and batch-processing controls to
-                                maximize their production output and compliance.</p>
-                            <div class="author-details">
-                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Food &
-                                    Beverage</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide-content-wrapper-testimonial custom-client-card">
-                        <div class="w-layout-vflex tstimonial-detailes">
-                            <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Enterprise Partner</div>
-                            </div>
-                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=Ford&font=Montserrat"
-                                class="client-logo-img" alt="Ford" />
-                            <p class="testimonial" style="font-size:15px; color:#444;">An iconic global automotive brand
-                                leading modern assembly lines. We deliver highly robust integration systems for their
-                                national production workflows.</p>
-                            <div class="author-details">
-                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Automotive
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide-content-wrapper-testimonial custom-client-card">
-                        <div class="w-layout-vflex tstimonial-detailes">
-                            <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Enterprise Partner</div>
-                            </div>
-                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=SAIL&font=Montserrat"
-                                class="client-logo-img" alt="SAIL" />
-                            <p class="testimonial" style="font-size:15px; color:#444;">Steel Authority of India Limited
-                                is a top steel-maker powering infrastructure. We provide critical controls and energy
-                                monitoring for their intense industrial operations.</p>
-                            <div class="author-details">
-                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Metals &
-                                    Mining</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide-content-wrapper-testimonial custom-client-card">
-                        <div class="w-layout-vflex tstimonial-detailes">
-                            <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Enterprise Partner</div>
-                            </div>
-                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=ISRO&font=Montserrat"
-                                class="client-logo-img" alt="ISRO" />
-                            <p class="testimonial" style="font-size:15px; color:#444;">The Indian Space Research
-                                Organisation is the national space agency of India. We support their infrastructure with
-                                mission-critical automation and centralized control architectures.</p>
-                            <div class="author-details">
-                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Aerospace
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide-content-wrapper-testimonial custom-client-card">
-                        <div class="w-layout-vflex tstimonial-detailes">
-                            <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Enterprise Partner</div>
-                            </div>
-                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=BHEL&font=Montserrat"
-                                class="client-logo-img" alt="BHEL" />
-                            <p class="testimonial" style="font-size:15px; color:#444;">Bharat Heavy Electricals Limited
-                                is a leading engineering enterprise. We provide advanced process optimization and
-                                safety-rated panels for their heavy engineering facilities.</p>
-                            <div class="author-details">
-                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Heavy
-                                    Equipment</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide-content-wrapper-testimonial custom-client-card">
-                        <div class="w-layout-vflex tstimonial-detailes">
-                            <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Enterprise Partner</div>
-                            </div>
-                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=TATA&font=Montserrat"
-                                class="client-logo-img" alt="Tata" />
-                            <p class="testimonial" style="font-size:15px; color:#444;">Tata is a global conglomerate. We
-                                ensure high-efficiency production lines across their manufacturing divisions through
-                                smart integration and lifecycle services.</p>
-                            <div class="author-details">
-                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Conglomerate
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide-content-wrapper-testimonial custom-client-card">
-                        <div class="w-layout-vflex tstimonial-detailes">
-                            <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Enterprise Partner</div>
-                            </div>
-                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=Saint-Gobain&font=Montserrat"
-                                class="client-logo-img" alt="Saint-Gobain" />
-                            <p class="testimonial" style="font-size:15px; color:#444;">A multinational corporation
-                                producing high-performance materials. We deliver robust control panels and drive
-                                sustainable energy management for their operations.</p>
-                            <div class="author-details">
-                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Glass &
-                                    Materials</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide-content-wrapper-testimonial custom-client-card">
-                        <div class="w-layout-vflex tstimonial-detailes">
-                            <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Enterprise Partner</div>
-                            </div>
-                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=Hyundai&font=Montserrat"
-                                class="client-logo-img" alt="Hyundai" />
-                            <p class="testimonial" style="font-size:15px; color:#444;">A global leader in automotive
-                                manufacturing. We deploy precision machine automation to optimize their high-demand
-                                assembly lines and robotics integration.</p>
-                            <div class="author-details">
-                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Automotive
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide-content-wrapper-testimonial custom-client-card">
-                        <div class="w-layout-vflex tstimonial-detailes">
-                            <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Enterprise Partner</div>
-                            </div>
-                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=PepsiCo&font=Montserrat"
-                                class="client-logo-img" alt="PepsiCo" />
-                            <p class="testimonial" style="font-size:15px; color:#444;">A global food and beverage
-                                leader. We implement intelligent machine automation and batch-processing controls to
-                                maximize their production output and compliance.</p>
-                            <div class="author-details">
-                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Food &
-                                    Beverage</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide-content-wrapper-testimonial custom-client-card">
-                        <div class="w-layout-vflex tstimonial-detailes">
-                            <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Enterprise Partner</div>
-                            </div>
-                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=Ford&font=Montserrat"
-                                class="client-logo-img" alt="Ford" />
-                            <p class="testimonial" style="font-size:15px; color:#444;">An iconic global automotive brand
-                                leading modern assembly lines. We deliver highly robust integration systems for their
-                                national production workflows.</p>
-                            <div class="author-details">
-                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Automotive
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="slide-content-wrapper-testimonial custom-client-card">
-                        <div class="w-layout-vflex tstimonial-detailes">
-                            <div class="w-layout-hflex rating-wraper">
-                                <div class="rating-label">Enterprise Partner</div>
-                            </div>
-                            <img src="https://placehold.co/240x80/f8f9fa/003366?text=SAIL&font=Montserrat"
-                                class="client-logo-img" alt="SAIL" />
-                            <p class="testimonial" style="font-size:15px; color:#444;">Steel Authority of India Limited
-                                is a top steel-maker powering infrastructure. We provide critical controls and energy
-                                monitoring for their intense industrial operations.</p>
-                            <div class="author-details">
-                                <div class="body-small author-post" style="color:#003366; font-weight:700;">Metals &
-                                    Mining</div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="w-layout-blockcontainer container align-center w-container">
-                <div class="sub-heading">FAQ</div>
-                <h2 class="section-heading">Insights into our<span class="gtext"> Solutions</span></h2>
-                <div class="body-base light align-center">Clear answers about our engineering capabilities, compliance
-                    standards, and digital transformation services.</div>
-                <div class="content-wrapper slim w-container">
-                    <div class="header-center-box _75"></div>
-                    <div class="accordion-wrapper">
-                        <div class="accordion-item">
-                            <div id="q1" class="accordion-item-trigger">
-                                <h3 class="accordion-heading">Are your panels compliant with international safety and
-                                    quality standards?</h3>
-                                <img loading="lazy"
-                                    src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b691afa27a5857fcbd12f3_chevron.right.svg"
-                                    alt="" class="icon accordion-icon" />
-                            </div>
-                            <div class="accordion-item-content">
-                                <p class="faq-ans">Yes, safety and quality are embedded in our engineering DNA. Our
-                                    hardware solutions and panels adhere strictly to ISO, CSA, NEMA, IEC, and UL
-                                    standards. Furthermore, our 6000 Sq.Ft manufacturing facility is geared to produce
-                                    panels compliant with ISI, CSA, UL, and NFPA79.</p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <div id="q2" class="accordion-item-trigger">
-                                <h3 class="accordion-heading">Which industries benefit most from your automation
-                                    platforms?</h3>
-                                <img loading="lazy"
-                                    src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b691afa27a5857fcbd12f3_chevron.right.svg"
-                                    alt="" class="icon accordion-icon" />
-                            </div>
-                            <div class="accordion-item-content">
-                                <p class="faq-ans">Our architecture is scalable across multiple verticals. We have
-                                    proven success in Heavy Manufacturing, Automotive, Food & Beverage, Power
-                                    Generation, Aerospace, and specific specialized divisions for Healthcare (RTLS
-                                    tracking) and Smart Commercial Buildings.</p>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <div id="q3" class="accordion-item-trigger">
-                                <h3 class="accordion-heading">How do you approach Energy Management & Sustainability?
-                                </h3>
-                                <img loading="lazy"
-                                    src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b691afa27a5857fcbd12f3_chevron.right.svg"
-                                    alt="" class="icon accordion-icon" />
-                            </div>
-                            <div class="accordion-item-content">
-                                <p class="faq-ans">We deploy intelligent monitoring systems that capture real-time
-                                    energy consumption data. By integrating these insights with your central BMS or
-                                    SCADA software, we help optimize usage, reduce your carbon footprint, and
-                                    significantly lower operational expenditures.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="w-layout-blockcontainer container align-center w-container">
-                <div class="w-layout-hflex cta-wraper">
-                    <div class="cta-left">
-                        <img src="https://images.pexels.com/photos/257736/pexels-photo-257736.jpeg?auto=compress&cs=tinysrgb&w=800"
-                            loading="lazy" width="515" alt="Innovative Controls Automation" class="image"
-                            style="border-radius: 12px;" />
-                    </div>
-                    <div class="cta-right">
-                        <h2>Future-Proof Your Operations,<span class="gtext"> Start Today</span></h2>
-                        <p class="text-light cta-discription">Partner with Innovative Controls to augment your internal
-                            capabilities, accelerate project delivery, and unlock the true potential of connected
-                            industries.</p>
-                        <div class="w-layout-vflex custom-bullet-wraper">
-                            <div class="w-layout-hflex custom-bullet">
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b6bb4e335b03d62bec32a8_Group 21.svg"
-                                    loading="lazy" alt="" />
-                                <div class="body-base cta-bullet"><strong>35 Years Legacy</strong> – Deep sectoral
-                                    knowledge applied to modern digital challenges.</div>
-                            </div>
-                            <div class="w-layout-hflex custom-bullet">
-                                <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b6bb4e57b30167d410e2e8_Group 22.svg"
-                                    loading="lazy" alt="" />
-                                <div class="body-base cta-bullet"><strong>Custom Architecture</strong> – Built
-                                    specifically for your enterprise scale.</div>
-                            </div>
-                        </div>
-                        <div class="w-layout-hflex cta-buttons-wraper">
-                            <a href="contact-us.html" class="primary-button w-button">Connect With Our Engineers</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="w-layout-blockcontainer container align-center w-container">
-                <div class="sub-heading">News & Insights</div>
-                <h2 class="section-heading">Navigating the Industrial Edge</h2>
-                <div class="body-base light align-center">Stay ahead of the curve with our expert perspectives on IIoT,
-                    energy efficiency, and modern manufacturing.</div>
-                <div class="blog-cms-grid w-dyn-list">
-                    <div role="list" class="blog-cms-list w-dyn-items w-row">
-                        <div role="listitem" class="blog-cms-item w-dyn-item w-col w-col-4">
-                            <a href="#" class="blog-card-wrapper w-inline-block">
-                                <div class="w-layout-vflex blog-card">
-                                    <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=400"
-                                        loading="lazy" alt="" class="blog-card-img"
-                                        style="object-fit: cover; height: 200px;" />
-                                    <h4 class="blog-card-title">Bridging IT and OT for Smart Manufacturing</h4>
-                                    <div class="blog-card-discription">Discover how unified data architecture
-                                        accelerates plant efficiency and unlocks predictive insights.</div>
-                                    <div class="blog-card-date">March 15, 2026</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div role="listitem" class="blog-cms-item w-dyn-item w-col w-col-4">
-                            <a href="#" class="blog-card-wrapper w-inline-block">
-                                <div class="w-layout-vflex blog-card">
-                                    <img src="https://images.pexels.com/photos/414837/pexels-photo-414837.jpeg?auto=compress&cs=tinysrgb&w=400"
-                                        loading="lazy" alt="" class="blog-card-img"
-                                        style="object-fit: cover; height: 200px;" />
-                                    <h4 class="blog-card-title">Sustainable Energy Management with SCADA</h4>
-                                    <div class="blog-card-discription">A strategic approach to turning raw energy data
-                                        into actionable, cost-saving operational algorithms.</div>
-                                    <div class="blog-card-date">March 22, 2026</div>
-                                </div>
-                            </a>
-                        </div>
-                        <div role="listitem" class="blog-cms-item w-dyn-item w-col w-col-4">
-                            <a href="#" class="blog-card-wrapper w-inline-block">
-                                <div class="w-layout-vflex blog-card">
-                                    <img src="https://images.pexels.com/photos/236380/pexels-photo-236380.jpeg?auto=compress&cs=tinysrgb&w=400"
-                                        loading="lazy" alt="" class="blog-card-img"
-                                        style="object-fit: cover; height: 200px;" />
-                                    <h4 class="blog-card-title">The Role of RTLS in Modern Healthcare</h4>
-                                    <div class="blog-card-discription">Enhancing patient safety and asset utilization
-                                        through Real-Time Location Services and automation.</div>
-                                    <div class="blog-card-date">March 28, 2026</div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="footer-section">
-            <div class="w-layout-blockcontainer container footer-continer w-container">
-                <div class="w-layout-vflex footer-wraper">
-                    <div class="w-layout-hflex footer-top">
-                        <div class="w-layout-hflex footer-top-left">
-                            <a href="index.html" class="w-inline-block">
-                                <img src="https://placehold.co/400x100/ffffff/003366?text=INNOVATIVE+CONTROLS&font=Montserrat"
-                                    loading="lazy" alt="Innovative Controls" height="45" class="footer-logo"
-                                    style="object-fit: contain;" />
-                            </a>
-                            <div class="footer-slogen">Empowering the Industrial Future.</div>
-                        </div>
-                        <div class="w-layout-hflex footer-top-right">
-                            <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b6c834904a438db91c8264_FacebookLogo.svg"
-                                loading="lazy" alt="" />
-                            <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b6c8343dcf43cac6738e5e_XLogo.svg"
-                                loading="lazy" alt="" />
-                            <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b6c83409fb62a2135eeb71_LinkedinLogo.svg"
-                                loading="lazy" alt="" />
-                        </div>
-                    </div>
-                    <div class="w-layout-hflex footer-mid">
-                        <div class="w-layout-vflex footer-mid-col-1">
-                            <p class="footer-discription">S.F. No. 366/1C, 372/2A, K.R.R. Building, KNG Puthur Jn.
-                                Thadagam Road, Coimbatore - 641 108, Tamilnadu, India<br><br><strong>24x7
-                                    Support:</strong> +91 9952811811<br><strong>Phone:</strong> +91422-2400912-13</p>
-                            <a href="mailto:info@innovativecontrrols.in"
-                                class="secondary-button w-button">info@innovativecontrrols.in</a>
-                        </div>
-                        <div class="w-layout-vflex footer-mid-col-2">
-                            <div class="footer-menu-title">Explore</div>
-                            <a href="home-1.html" class="footer-menu-link">Corporate Overview</a>
-                            <a href="home-2.html" aria-current="page" class="footer-menu-link w--current">Automation
-                                Solutions</a>
-                            <a href="about-us.html" class="footer-menu-link">Our Legacy</a>
-                            <a href="features.html" class="footer-menu-link">Capabilities</a>
-                        </div>
-                        <div class="w-layout-vflex footer-mid-col-2">
-                            <div class="footer-menu-title">Business Units</div>
-                            <a href="#" class="footer-menu-link">System Integration</a>
-                            <a href="#" class="footer-menu-link">Process Automation</a>
-                            <a href="#" class="footer-menu-link">Energy Management</a>
-                            <a href="#" class="footer-menu-link">Smart Building (BMS)</a>
-                        </div>
-                        <div class="w-layout-vflex footer-mid-col-2">
-                            <div class="footer-menu-title">Legal</div>
-                            <a href="privacy-policy.html" class="footer-menu-link">Privacy Policy</a>
-                            <a href="licenses.html" class="footer-menu-link">Licenses</a>
-                        </div>
-                    </div>
-                    <div class="w-layout-hflex footer-bottom">
-                        <div class="copyright">© 2026 — Copyright Innovative Controls</div>
-                        <div class="copyright">Powered by <a href="#">Apexinfo</a></div>
-                        <a href="#" class="scroll-to-top-btn w-inline-block">
-                            <img src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/68b6cd097587deed37cd5752_scrollToTop.svg"
-                                loading="lazy" alt="" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <section id="clients" class="bg-light">
+    <div class="container" style="padding-bottom: 0;">
+      <div class="section-header center">
+        <span class="section-label">Trusted Partners</span>
+        <h2 class="section-title">Our <span>Clientele</span></h2>
+        <p class="section-desc">We are proud to have partnered with India's most recognized brands and global industry
+          leaders over the past 35 years.</p>
+      </div>
     </div>
 
-    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8600a.js" type="text/javascript"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/js/webflow.schunk.36b8fb49256177c8.js"
-        type="text/javascript"></script>
-    <script src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/js/webflow.schunk.af7b1f697c954370.js"
-        type="text/javascript"></script>
-    <script src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/js/webflow.schunk.268db8da64f134c3.js"
-        type="text/javascript"></script>
-    <script src="https://cdn.prod.website-files.com/68b12a0b7d578937c1b1d5ed/js/webflow.f1303878.b0cb056c8436a750.js"
-        type="text/javascript"></script>
+    <div style="max-width: 1320px; margin: 0 auto; padding: 0 2rem 2rem;">
+      <div class="logo-grid" id="logoGrid"></div>
+    </div>
 
+    <div class="ticker-container">
+      <div class="ticker-track" id="ttrack"></div>
+    </div>
+  </section>
+
+  <section id="contact" class="container">
+    <div class="contact-layout">
+      <div>
+        <span class="section-label">Get In Touch</span>
+        <h2 class="section-title">Let's Build <span>Together</span></h2>
+        <p class="section-desc" style="margin-bottom: 3rem;">Ready to optimize your operations? Connect with our
+          engineering team to evaluate your automation requirements.</p>
+
+        <div class="contact-info-block">
+          <div class="ci-icon" data-icon="map-pin"></div>
+          <div class="ci-text">
+            <h4>Corporate Office & Facility</h4>
+            <p>S.F. No. 366/1C, 372/2A, K.R.R. Building<br>KNG Puthur Jn. Thadagam Road<br>Coimbatore – 641 108, Tamil
+              Nadu, India</p>
+          </div>
+        </div>
+        <div class="contact-info-block">
+          <div class="ci-icon" data-icon="phone"></div>
+          <div class="ci-text">
+            <h4>Direct Lines</h4>
+            <p>+91 422-2400912 / 13<br>+91 90036 22822 &nbsp;|&nbsp; +91 90039 30193</p>
+          </div>
+        </div>
+        <div class="contact-info-block">
+          <div class="ci-icon" data-icon="clock"></div>
+          <div class="ci-text">
+            <h4>24/7 Support Desk</h4>
+            <p>+91 99528 11811</p>
+          </div>
+        </div>
+        <div class="contact-info-block">
+          <div class="ci-icon" data-icon="mail"></div>
+          <div class="ci-text">
+            <h4>Digital Contact</h4>
+            <p>info@innovativecontrrols.in<br>www.innovativecontrrols.in</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <form onsubmit="event.preventDefault();">
+          <div class="form-row">
+            <div class="form-group"><label>First Name</label><input type="text" class="form-control" placeholder="John">
+            </div>
+            <div class="form-group"><label>Last Name</label><input type="text" class="form-control" placeholder="Doe">
+            </div>
+          </div>
+          <div class="form-group"><label>Company Name</label><input type="text" class="form-control"
+              placeholder="Enter your company name"></div>
+          <div class="form-row">
+            <div class="form-group"><label>Email Address</label><input type="email" class="form-control"
+                placeholder="john@company.com"></div>
+            <div class="form-group"><label>Phone Number</label><input type="tel" class="form-control"
+                placeholder="+91 XXXXX XXXXX"></div>
+          </div>
+          <div class="form-group">
+            <label>Solution Type Required</label>
+            <select class="form-control">
+              <option value="">Select a Category</option>
+              <option>System Integration</option>
+              <option>Process Automation</option>
+              <option>Energy Management</option>
+              <option>Machine Control</option>
+              <option>Robotics / AI Systems</option>
+              <option>Building Management (BMS)</option>
+              <option>Control Panel Manufacturing</option>
+            </select>
+          </div>
+          <div class="form-group"><label>Project Brief</label><textarea class="form-control"
+              placeholder="Briefly describe your automation or panel requirements..."></textarea></div>
+          <button class="btn btn-primary" style="width: 100%; font-size: 1.1rem; padding: 1rem;">Submit Enquiry</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a href="#">
+          <img src="image.png" alt="Innovative Controls logo"
+            onerror="this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'40\'%3E%3Ctext x=\'0\' y=\'50%25\' dominant-baseline=\'middle\' font-family=\'sans-serif\' font-weight=\'bold\' font-size=\'20\' fill=\'%23ffffff\'%3EInnovative Controls%3C/text%3E%3C/svg%3E'">
+        </a>
+        <p>Empowering Industry 4.0 with comprehensive, end-to-end industrial automation and control panel manufacturing
+          solutions globally.</p>
+        <div class="social-links">
+          <a href="#" class="social-link" aria-label="LinkedIn" data-icon="linkedin"></a>
+          <a href="#" class="social-link" aria-label="Twitter" data-icon="twitter"></a>
+          <a href="#" class="social-link" aria-label="YouTube" data-icon="youtube"></a>
+        </div>
+      </div>
+
+      <div class="footer-links-grid">
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="#segments">System Integration</a></li>
+            <li><a href="#segments">Process Automation</a></li>
+            <li><a href="#segments">Machine Control</a></li>
+            <li><a href="#segments">Energy Management</a></li>
+            <li><a href="#segments">Robotics & AI</a></li>
+            <li><a href="#segments">Building Management</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul>
+            <li><a href="#panels">MCCs & PCCs</a></li>
+            <li><a href="#panels">PLC & VFD Panels</a></li>
+            <li><a href="#panels">Process Control</a></li>
+            <li><a href="#panels">BMS Panels</a></li>
+            <li><a href="#panels">Flameproof Systems</a></li>
+            <li><a href="#panels">Specialty Panels</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Industries</h4>
+          <ul>
+            <li><a href="#verticals">Automotive & Defence</a></li>
+            <li><a href="#verticals">Cement & Minerals</a></li>
+            <li><a href="#verticals">Food & Beverage</a></li>
+            <li><a href="#verticals">Power & Utilities</a></li>
+            <li><a href="#verticals">Healthcare</a></li>
+            <li><a href="#verticals">Textile & Paper</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#clients">Our Clients</a></li>
+            <li><a href="#services">Services & Support</a></li>
+            <li><a href="#contact">Contact Office</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div class="copyright">
+        &copy; 2026 Innovative Controls. All rights reserved. <br>
+        <span class="developer-credit">Developed by <strong>apexinfo</strong></span>
+      </div>
+      <div class="legal-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // SVG Icons Library
+    const ICONS = {
+      spark: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l1.8 4.2L18 8l-4.2 1.8L12 14l-1.8-4.2L6 8l4.2-1.8L12 2Z"/></svg>',
+      factory: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V10l5 3V9l5 3V5l4 3v13"/><path d="M9 21v-4h6v4"/></svg>',
+      award: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="m8.5 13.5-1 7L12 18l4.5 2.5-1-7"/></svg>',
+      building: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><path d="M9 22v-4h6v4"/><path d="M8 6h.01"/><path d="M16 6h.01"/><path d="M12 6h.01"/><path d="M12 10h.01"/><path d="M12 14h.01"/><path d="M16 10h.01"/><path d="M16 14h.01"/><path d="M8 10h.01"/><path d="M8 14h.01"/></svg>',
+      cpu: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="1" x2="9" y2="4"/><line x1="15" y1="1" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="23"/><line x1="15" y1="20" x2="15" y2="23"/><line x1="20" y1="9" x2="23" y2="9"/><line x1="20" y1="14" x2="23" y2="14"/><line x1="1" y1="9" x2="4" y2="9"/><line x1="1" y1="14" x2="4" y2="14"/></svg>',
+      robot: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><circle cx="12" cy="5" r="2"/><path d="M12 7v4"/><line x1="8" y1="16" x2="8" y2="16"/><line x1="16" y1="16" x2="16" y2="16"/></svg>',
+      server: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>',
+      activity: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>',
+      settings: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>',
+      'git-merge': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="18" r="3"/><circle cx="6" cy="6" r="3"/><path d="M6 21V9a9 9 0 0 0 9 9"/></svg>',
+      grid: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>',
+      'share-2': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>',
+      zap: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>',
+      'battery-charging': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 18H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3.19M15 6h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-3.19"/><line x1="23" y1="13" x2="23" y2="11"/><polyline points="11 6 7 12 13 12 9 18"/></svg>',
+      monitor: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',
+      layers: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>',
+      home: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',
+      check: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>',
+      search: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>',
+      tool: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>',
+      wifi: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><line x1="12" y1="20" x2="12.01" y2="20"/></svg>',
+      'book-open': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>',
+      shield: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
+      'map-pin': '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>',
+      phone: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+      clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
+      mail: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>',
+      linkedin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>',
+      twitter: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg>',
+      youtube: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>'
+    };
+
+    // Insert Icons
+    document.querySelectorAll('[data-icon]').forEach(el => {
+      const iconName = el.getAttribute('data-icon');
+      if (ICONS[iconName]) el.innerHTML = ICONS[iconName];
+    });
+
+    // Populate Data for Panels
+    const panels = ["MCCs & iMCCs", "PCCs & iPCCs", "LT & HT Panels", "PLC Panels", "APFC Panels", "SPM Control Panels", "VFD Control Panels", "Remote I/Os", "Control Desks", "Operator Stations", "Flameproof Panels", "Pressure Booster", "Furnace Control", "Kiln Automation", "Wireless Systems", "ETP / STP / RO", "Food Processing", "Packaging Control", "PreCast Automation", "Boiler Control", "Autoclave Panel", "Crane Control", "Hydraulic Control", "Waste Management", "Industrial Oven", "BMS Control", "Home Automation"];
+    const pGrid = document.getElementById('panelGrid');
+    panels.forEach(p => pGrid.innerHTML += `<div class="product-pill">${ICONS.check} ${p}</div>`);
+
+    // Populate Data for Verticals
+    const verticals = ["Mines & Minerals", "Textile Industry", "Food & Breweries", "Automotive", "Cement Manufacturing", "Pulp & Paper", "Special Purpose Machines", "Defence Sector", "Precast Concrete", "Power Generation", "Sugar Plants", "Water Treatment", "AI Powered Systems", "Building Automation", "Vision Based Systems", "Industrial Robotics", "Packaging Lines", "Power Monitoring"];
+    const vGrid = document.getElementById('vertGrid');
+    verticals.forEach(v => vGrid.innerHTML += `<div class="ind-item"><div class="ind-dot"></div> ${v}</div>`);
+
+
+    // ════ EXACT ORIGINAL CLIENT DOM CREATION LOGIC ════ //
+    const clients = [
+      { name: "Saint-Gobain", domain: "saint-gobain.com", sector: "Construction", short: "SG" },
+      { name: "Chettinad Cement", domain: "chettinadcement.com", sector: "Cement", short: "CC" },
+      { name: "CGH Earth", domain: "cghearth.com", sector: "Hospitality", short: "CGH" },
+      { name: "BEML", domain: "bemlindia.in", sector: "Heavy Engineering", short: "BEML" },
+      { name: "PepsiCo", domain: "pepsico.com", sector: "Paper", short: "TNPL" },
+      { name: "Lotte", domain: "lotte.com", sector: "FMCG", short: "LOTTE" },
+      { name: "Tnpl", domain: "tnpl.com", sector: "Cement", short: "PEP" },
+      { name: "Hyundai", domain: "hyundai.com", sector: "Automotive", short: "H" },
+      { name: "ACC Cement", domain: "acclimited.com", sector: "Cement", short: "ACC" },
+      { name: "Ford", domain: "ford.com", sector: "Automotive", short: "FORD" },
+      { name: "Britannia", domain: "britannia.co.in", sector: "Food", short: "BRI" },
+      { name: "DuPont", domain: "dupont.com", sector: "Chemicals", short: "D" },
+      { name: "Indian Railways", domain: "indianrailways.gov.in", sector: "Rail Transport", short: "IR" },
+      { name: "JSW Steel", domain: "jsw.in", sector: "Steel", short: "JSW" },
+      { name: "CUMI", domain: "cumi.murugappa.com", sector: "Abrasives", short: "CUMI" },
+      { name: "LMW", domain: "lmwglobal.com", sector: "Textile Machinery", short: "LMW" },
+      { name: "BHEL", domain: "bhel.com", sector: "Power", short: "BHEL" },
+      { name: "SAIL", domain: "sail.co.in", sector: "Steel", short: "SAIL" },
+      { name: "L&T", domain: "larsentoubro.com", sector: "Engineering", short: "L&T" },
+      { name: "Pony", sector: "Manufacturing", short: "PONY" },
+      { name: "ISRO", domain: "isro.gov.in", sector: "Space & Defence", short: "ISRO" },
+      { name: "BARC", domain: "barc.gov.in", sector: "Nuclear", short: "BARC" },
+      { name: "Asian Paints", domain: "asianpaints.com", sector: "Paints", short: "AP" },
+      { name: "Weckenmann", domain: "weckenmann.com", sector: "Precast", short: "W" },
+      { name: "Texmo", domain: "texmoindustries.com", sector: "Pumps", short: "TEXMO" },
+      { name: "TATA", domain: "tata.com", sector: "Conglomerate", short: "TATA" },
+    ];
+
+    // Add local logo references exactly as requested
+    clients.forEach((client, index) => {
+      client.logo = `logos/${index + 1}.png`;
+    });
+
+    const grid = document.getElementById('logoGrid');
+    const ttrack = document.getElementById('ttrack');
+
+    clients.forEach(c => {
+      const card = document.createElement('div');
+      card.className = 'client-card'; // Changed clcard to client-card to use new premium CSS
+
+      const media = document.createElement('div');
+      media.className = 'cl-logo-shell';
+
+      const fallback = document.createElement('div');
+      fallback.className = 'cl-fallback';
+      fallback.textContent = c.short || c.name.replace(/[^A-Za-z0-9]/g, '').slice(0, 4).toUpperCase();
+
+      const logoSrc = c.logo || (c.domain ? `https://logo.clearbit.com/${c.domain}?size=256` : '');
+
+      if (logoSrc) {
+        const img = document.createElement('img');
+        img.src = logoSrc;
+        img.alt = c.name;
+        img.loading = 'lazy';
+        img.decoding = 'async';
+        img.onerror = () => {
+          card.classList.add('logo-missing');
+          img.remove();
+        };
+        media.appendChild(img);
+      } else {
+        card.classList.add('logo-missing');
+      }
+
+      media.appendChild(fallback);
+
+      const title = document.createElement('div');
+      title.className = 'cl-tlogo';
+      title.textContent = c.name;
+
+      const sec = document.createElement('div');
+      sec.className = 'cl-sector';
+      sec.textContent = c.sector;
+
+      card.appendChild(media);
+      card.appendChild(title);
+      card.appendChild(sec);
+      grid.appendChild(card);
+    });
+
+    // Ticker – doubled for seamless loop
+    [...clients, ...clients].forEach(c => {
+      const chip = document.createElement('div');
+      chip.className = 'ticker-item';
+      chip.innerHTML = `<span style="color:var(--color-brand-accent); width:14px; display:inline-block; margin-right:4px;">${ICONS.spark}</span>${c.name}`;
+      ttrack.appendChild(chip);
+    });
+
+    // Navbar Scroll Effect
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('navbar');
+      if (window.scrollY > 50) nav.classList.add('scrolled');
+      else nav.classList.remove('scrolled');
+    });
+  </script>
 </body>
 
 </html>
